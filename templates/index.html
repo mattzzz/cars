@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='main.css') }}">
+    <title>Cars predictor</title>
+</head>
+<body>
+	<h1>Predicting race cars with a CNN</h1>
+    <img src="{{ user_image }}" alt="race car">
+
+    <form action='/upload' method='post' enctype = "multipart/form-data">
+		<input type="submit" value="Upload">
+		<input type="file" name="file">
+	</form>
+
+    <div class="container">
+    	<h2>Prediction: {{prediction}}</h2>
+    	<form action="/predict" method="post">
+        	<input type="submit" value="Classify" >
+   		</form>
+	</div>
+</body>
+</html>
+
