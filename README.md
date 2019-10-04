@@ -1,6 +1,6 @@
-# cars
+# racing-cars-predictor
 
-## Cars is a simple webapp to predict and classify a photo of a single seater racing car
+## This is a simple webapp to predict and classify a photo of a single seater racing car
 
 Will classify either:
 
